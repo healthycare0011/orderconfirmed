@@ -1,70 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Order Confirmation</title>
-  <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmed</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .headline {
+            text-align: center;
+            padding: 8px 8px;
+            border-radious:5px;
+            background-color: #3498db;
+            color: #fff;
+            font-size: 24px;
+        }
+
+        .text-container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .bold-text {
+            font-weight: bold;
+        }
+
+        .back-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .home-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
   
-    body {
-      background-color: #f0f0f0;
-      margin: 0;
-      font-family: Arial, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-  header {
-      text-align: center;
-      color: LimeGreen;
-      margin-top: 20px;
-    }
+  #contact {
+            text-align: center;
+            margin: 20px;
+        }
 
-    #confirmation-container {
-      text-align: center;
-    }
+        #contact h2 {
+            color: #8cc084;
+        }
 
-    #confirmation-message {
-      background-color: #8aff8a;
-      border-radius: 100%;
-      padding: 20px;
-      display: inline-block;
-      margin-bottom: 20px;
-    }
+        .contact-info {
+            margin-top: 10px;
+        }
+   #message-us {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #0084FF;
+            color: #fff;
+            padding: 10px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+        }
 
-    #back-button {
-      background-color: #3498db;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-      font-size: 16px;
-      transition: background-color 0.3s;
-    }
-
-    #back-button:hover {
-      background-color: #2980b9;
-    }
-  </style>
+        #message-us img {
+            width: 30px; /* Adjust the size of the logo */
+            height: 30px;
+            }
+  footer {
+            background-color: ;
+            color: ;
+            text-align: center;
+            padding: 10px;
+            position: flex;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
-<header>
-    <h1> Thanks for confirming your order</h1>
-  </header>
 <body>
+    <div class="headline">
+        <h1>Order Confirmed</h1>
+    </div>
 
-  <div id="confirmation-container">
-    <div id="confirmation-message">Your Order is Confirmed</div>
-    <button id="back-button" onclick="goBack()">Back</button>
-  </div>
+    <div class="text-container">
+        <p class="bold-text">আপনার অর্ডার টি কনফার্ম করা হয়েছে। ৩/৪ দিনের মধ্যেই J&N BD MART থেকে আপনার দেয়া এড্রেসে আমাদের ডেলিভারি মেন আপনার প্রোডাক্ট টি পৌছে দিবে। 
+          যেকোনো সহায়তার জন্য নিচে দেয়া ফেসবুক মেসেঞ্জার বাটনে ক্লিক করে সরাসরি আমাদের সাথে যোগাযোগ করুন অথবা নিচের দেয়া নাম্বারে কল করুন।</p>
+    </div>
 
-  <script>
-    function goBack() {
-      window.history.back();
-    }
-  </script>
-
+    <a href="javascript:history.back()" class="back-button">Go Back</a>
+    <a href="https://healthycare0011.github.io/homepage/" class="home-button">Home</a>
+   <div id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p>Email: healthycare.info.bd@gmail.com</p>
+            <p>Phone: +8801776762354</p>
+            <p></p>
+        </div>
+     <footer>
+        &copy; 2024 Healthy Care
+    </footer>
+        <a href="https://m.me/141819632357689" id="message-us" target="_blank">
+        <img src="https://raw.githubusercontent.com/healthycare0011/photo/main/facebook-messenger-icon.png" alt="Messenger Logo">
+        </a>
 </body>
 </html>
